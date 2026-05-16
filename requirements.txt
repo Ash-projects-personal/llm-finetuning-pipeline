@@ -1,11 +1,12 @@
-torch>=2.1.0
-transformers>=4.40.0
-peft>=0.10.0
-trl>=0.8.6
-bitsandbytes>=0.43.0
-datasets>=2.19.0
-accelerate>=0.29.0
-wandb>=0.16.6
-sentencepiece>=0.2.0
-protobuf>=4.25.0
-scipy>=1.13.0
+# Tight version ranges — pin upper bounds on libraries that break across minors.
+torch>=2.1.0,<2.5
+transformers>=4.40.0,<4.46
+peft>=0.10.0,<0.13
+trl>=0.8.6,<0.10
+bitsandbytes>=0.43.0,<0.45
+datasets>=2.19.0,<3.0
+accelerate>=0.29.0,<0.34
+wandb>=0.16.6,<0.18
+sentencepiece>=0.2.0,<0.3
+protobuf>=4.25.0,<5.0
+scipy>=1.13.0,<2.0
