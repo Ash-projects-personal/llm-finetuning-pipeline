@@ -1,0 +1,20 @@
+{
+  "base": {
+    "rouge_l_f1_mean": 0.131,
+    "exact_match_mean": 0.0,
+    "n": 62,
+    "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/models/SmolLM2-135M"
+  },
+  "dpo": {
+    "rouge_l_f1_mean": 0.2272,
+    "exact_match_mean": 0.0161,
+    "n": 62,
+    "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/outputs/dpo_merged"
+  },
+  "sft": {
+    "rouge_l_f1_mean": 0.2284,
+    "exact_match_mean": 0.0161,
+    "n": 62,
+    "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/outputs/sft_merged"
+  }
+}

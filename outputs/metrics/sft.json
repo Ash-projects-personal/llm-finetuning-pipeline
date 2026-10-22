@@ -1,0 +1,16 @@
+{
+  "run": "eval_sft",
+  "started_unix": 1792683728.2565527,
+  "platform": "Linux-7.0.0-39-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "tag": "sft",
+  "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/outputs/sft_merged",
+  "eval_set": "data/eval.jsonl (held-out Alpaca subsample)",
+  "n": 62,
+  "rouge_l_f1_mean": 0.2284,
+  "exact_match_mean": 0.0161,
+  "decoding": "greedy",
+  "max_new_tokens": 48,
+  "wall_seconds": 351.06,
+  "peak_memory_mb": 905.5
+}

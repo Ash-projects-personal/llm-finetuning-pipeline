@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "sft_source": "tatsu-lab/alpaca (train split, 52,002 rows), CC BY-NC 4.0",
+  "sft_train_size": 1500,
+  "eval_size": 62,
+  "eval_disjoint_from_train": true,
+  "dpo_source": "HuggingFaceH4/ultrafeedback_binarized (train_prefs), first 256 usable pairs from a stream",
+  "dpo_size": 256
+}

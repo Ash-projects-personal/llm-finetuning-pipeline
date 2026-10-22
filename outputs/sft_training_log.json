@@ -1,0 +1,228 @@
+{
+  "run": "sft_lora",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/models/SmolLM2-135M",
+  "dataset": "tatsu-lab/alpaca subsample (data/sft_train.jsonl)",
+  "train_examples": 1500,
+  "skipped_too_long": 0,
+  "max_len": 512,
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "train_args": {
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 2,
+    "learning_rate": 0.0002,
+    "warmup_steps": 11,
+    "logging_steps": 10
+  },
+  "trainable_params": 1843200,
+  "total_params": 136358208,
+  "total_steps": 376,
+  "loss_points": [
+    {
+      "step": 10,
+      "loss": 1.8788684844970702,
+      "epoch": 0.05333333333333334
+    },
+    {
+      "step": 20,
+      "loss": 2.0650352478027343,
+      "epoch": 0.10666666666666667
+    },
+    {
+      "step": 30,
+      "loss": 1.868859100341797,
+      "epoch": 0.16
+    },
+    {
+      "step": 40,
+      "loss": 1.738062286376953,
+      "epoch": 0.21333333333333335
+    },
+    {
+      "step": 50,
+      "loss": 1.781650924682617,
+      "epoch": 0.26666666666666666
+    },
+    {
+      "step": 60,
+      "loss": 1.7509902954101562,
+      "epoch": 0.32
+    },
+    {
+      "step": 70,
+      "loss": 1.6374473571777344,
+      "epoch": 0.37333333333333335
+    },
+    {
+      "step": 80,
+      "loss": 1.7953948974609375,
+      "epoch": 0.4266666666666667
+    },
+    {
+      "step": 90,
+      "loss": 1.7464307785034179,
+      "epoch": 0.48
+    },
+    {
+      "step": 100,
+      "loss": 1.5702765464782715,
+      "epoch": 0.5333333333333333
+    },
+    {
+      "step": 110,
+      "loss": 1.730227279663086,
+      "epoch": 0.5866666666666667
+    },
+    {
+      "step": 120,
+      "loss": 1.8589502334594727,
+      "epoch": 0.64
+    },
+    {
+      "step": 130,
+      "loss": 1.665911865234375,
+      "epoch": 0.6933333333333334
+    },
+    {
+      "step": 140,
+      "loss": 1.7361436843872071,
+      "epoch": 0.7466666666666667
+    },
+    {
+      "step": 150,
+      "loss": 1.7886211395263671,
+      "epoch": 0.8
+    },
+    {
+      "step": 160,
+      "loss": 1.722153091430664,
+      "epoch": 0.8533333333333334
+    },
+    {
+      "step": 170,
+      "loss": 1.7245389938354492,
+      "epoch": 0.9066666666666666
+    },
+    {
+      "step": 180,
+      "loss": 1.7306468963623047,
+      "epoch": 0.96
+    },
+    {
+      "step": 190,
+      "loss": 1.7043197631835938,
+      "epoch": 1.0106666666666666
+    },
+    {
+      "step": 200,
+      "loss": 1.6199064254760742,
+      "epoch": 1.064
+    },
+    {
+      "step": 210,
+      "loss": 1.7673799514770507,
+      "epoch": 1.1173333333333333
+    },
+    {
+      "step": 220,
+      "loss": 1.7828849792480468,
+      "epoch": 1.1706666666666667
+    },
+    {
+      "step": 230,
+      "loss": 1.6587772369384766,
+      "epoch": 1.224
+    },
+    {
+      "step": 240,
+      "loss": 1.524344539642334,
+      "epoch": 1.2773333333333334
+    },
+    {
+      "step": 250,
+      "loss": 1.6274421691894532,
+      "epoch": 1.3306666666666667
+    },
+    {
+      "step": 260,
+      "loss": 1.7011541366577148,
+      "epoch": 1.384
+    },
+    {
+      "step": 270,
+      "loss": 1.7881710052490234,
+      "epoch": 1.4373333333333334
+    },
+    {
+      "step": 280,
+      "loss": 1.7332983016967773,
+      "epoch": 1.4906666666666666
+    },
+    {
+      "step": 290,
+      "loss": 1.6505220413208008,
+      "epoch": 1.544
+    },
+    {
+      "step": 300,
+      "loss": 1.6689229965209962,
+      "epoch": 1.5973333333333333
+    },
+    {
+      "step": 310,
+      "loss": 1.6989547729492187,
+      "epoch": 1.6506666666666665
+    },
+    {
+      "step": 320,
+      "loss": 1.708466148376465,
+      "epoch": 1.704
+    },
+    {
+      "step": 330,
+      "loss": 1.7509235382080077,
+      "epoch": 1.7573333333333334
+    },
+    {
+      "step": 340,
+      "loss": 1.6206993103027343,
+      "epoch": 1.8106666666666666
+    },
+    {
+      "step": 350,
+      "loss": 1.5875665664672851,
+      "epoch": 1.8639999999999999
+    },
+    {
+      "step": 360,
+      "loss": 1.6847055435180665,
+      "epoch": 1.9173333333333333
+    },
+    {
+      "step": 370,
+      "loss": 1.653371238708496,
+      "epoch": 1.9706666666666668
+    }
+  ],
+  "final_loss": 1.653371238708496,
+  "trainer_reported": {
+    "train_runtime_seconds": 6602,
+    "train_loss_avg": 1.716,
+    "train_samples_per_second": 0.454
+  },
+  "device": "cpu",
+  "torch_threads": 2,
+  "recovery_note": "Training itself completed all 376 steps (runtime 6602 s, recorded by the Trainer in outputs/sft_console.log and checkpoint-376/trainer_state.json). The process was then killed by a runtime restart during the merged model save, before this log was written. The merge and this log were regenerated from checkpoint-376 and the saved adapter without retraining. Peak memory of the original training process was not recorded before the kill, so it is not reported here.",
+  "trainable_params_note": "Counted by the training process at startup (printed in outputs/sft_console.log). The recovery process loaded the adapter in inference mode, which reports 0 trainable, so the run value is used."
+}

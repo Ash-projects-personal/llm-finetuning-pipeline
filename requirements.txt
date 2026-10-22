@@ -1,12 +1,10 @@
-# Tight version ranges — pin upper bounds on libraries that break across minors.
-torch>=2.1.0,<2.5
-transformers>=4.40.0,<4.46
-peft>=0.10.0,<0.13
-trl>=0.8.6,<0.10
-bitsandbytes>=0.43.0,<0.45
-datasets>=2.19.0,<3.0
-accelerate>=0.29.0,<0.34
-wandb>=0.16.6,<0.18
-sentencepiece>=0.2.0,<0.3
-protobuf>=4.25.0,<5.0
-scipy>=1.13.0,<2.0
+# Versions actually used for the runs in outputs/.
+# torch is the CPU wheel. Install it from the PyTorch CPU index:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch==2.14.1+cpu
+torch==2.14.1+cpu
+transformers==5.20.2
+peft==0.21.2
+trl==1.16.0
+datasets==5.1.0
+accelerate==1.15.0
+pytest==9.1.1

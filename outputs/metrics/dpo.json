@@ -1,0 +1,16 @@
+{
+  "run": "eval_dpo",
+  "started_unix": 1792689938.3402286,
+  "platform": "Linux-7.0.0-39-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "tag": "dpo",
+  "model_path": "/home/hatch/workspace/projects/rebuilds/llm-finetuning-pipeline/outputs/dpo_merged",
+  "eval_set": "data/eval.jsonl (held-out Alpaca subsample)",
+  "n": 62,
+  "rouge_l_f1_mean": 0.2272,
+  "exact_match_mean": 0.0161,
+  "decoding": "greedy",
+  "max_new_tokens": 48,
+  "wall_seconds": 159.18,
+  "peak_memory_mb": 908.9
+}
